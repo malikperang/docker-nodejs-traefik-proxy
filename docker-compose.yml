@@ -1,0 +1,13 @@
+version: "3"
+services:
+  web:
+    build: .
+    labels:
+      - "traefik.backend=webserver"
+      - "traefik.frontend.rule=Host:web.traefik.test"
+      - "traefik.port=3000"
+    networks:
+      - traefik_web_traefik_web
+networks:
+  traefik_web_traefik_web:
+    external: true

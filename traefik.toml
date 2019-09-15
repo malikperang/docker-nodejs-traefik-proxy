@@ -1,0 +1,18 @@
+defaultEntryPoints = ["http"]
+logLevel = "DEBUG"
+
+[api]
+address = ":8080"
+
+[entryPoints]
+    [entryPoints.http]
+    address = ":80"
+
+[retry]
+attempts = 3
+maxMem = 3
+
+[docker]
+domain = "docker.localhost"
+watch=true
+exposedbydefault = true
