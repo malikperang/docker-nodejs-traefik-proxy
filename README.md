@@ -1,12 +1,12 @@
-#Docker Nodejs Traefik Proxy
+# Docker Nodejs Traefik Proxy
 
 This is an example of how to use Traefik as a reverse proxy and act as load balancer to NodeJS application running on the same docker network.
 
-###Requirements
+### Requirements
 
 - [Docker](https://docs.docker.com/install/)
 
-###How to Use
+### How to Use
 
 Build & start Traefik container independently.
 
